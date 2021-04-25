@@ -130,6 +130,63 @@ h6 {
   padding-top: 25px;
 }
 
+.wrapper section {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.wrapper footer .footer__cont {
+  width: 100%;
+  background-color: #cfcbcb;
+}
+
+.wrapper footer .footer__cont form {
+  width: 95%;
+  margin-left: 30px;
+}
+
+.wrapper footer .footer__cont form h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.wrapper footer .footer__cont form p {
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.wrapper footer .footer__cont form input {
+  width: 100%;
+  height: 30px;
+}
+
+.wrapper footer .footer__cont form button {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: #414040;
+  font-size: 25px;
+  padding: auto;
+}
+
+.wrapper footer .footer__cont form button:hover {
+  background-color: #858282;
+}
+
+@media (max-width: 720px) {
+  .wrapper footer .footer__cont form button:hover {
+    pointer-events: none;
+  }
+}
+
 .wrapper .container {
   width: 100%;
   height: 100%;
