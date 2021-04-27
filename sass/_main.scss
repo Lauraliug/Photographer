@@ -23,72 +23,65 @@
         height: 200px;
         border: 3px solid $white;
         h1 {
-            font-size: $xlarge;
-            font-family: $font;
-            color: $white;
-            text-align: center;
-            padding-top: 25px;
+          font-size: $xlarge;
+          font-family: $font;
+          color: $white;
+          text-align: center;
+          padding-top: 25px;
         }
         p {
-            font-size: $medium;
-            color: $white;
-            text-align: center;
-            padding-top: 25px;
+          font-size: $medium;
+          color: $white;
+          text-align: center;
+          padding-top: 25px;
         }
       }
     }
   }
   section {
-      width: 100%;
-      height: 100%;
-  } 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+   .section__cont {
+     width: 100%;
+   }
+  }
 
   footer {
-      width: 100%;
-      justify-content: center;
+    width: 100%;
+    justify-content: center;
     display: flex;
-      .footer__cont {
+    .footer__cont {
+      width: 100%;
+      background-color: $lightgrey;
+      form {
+        width: 95%;
+        margin-left: 30px;
+        h2 {
+          font-size: $medium;
+          text-align: center;
+          padding-top: 40px;
+        }
+        p {
+          font-size: $normal;
+          margin-top: 50px;
+        }
+        input {
           width: 100%;
-          background-color: $lightgrey;
-          form {
-              width: 95%;
-              margin-left: 30px;
-            h2 {
-                font-size: $medium;
-                text-align: center;
-                padding-top: 40px;
-            }
-            p {
-                font-size: $normal;
-                margin-top: 50px;
-            }
-            input {
-                width: 100%;
-                height: 30px;
-
-            }
-            button {
-                margin-top: 10px;
-                width: 100%;
-                height: 30px;
-                color: $white;
-                background-color: $grey;
-                font-size: $normal;
-                padding: auto;
-                &:hover {
-                    background-color: rgb(133, 130, 130);
-                    @media (max-width: $md) {
-                        pointer-events: none;
-                    }
-
-                }
-
-            }
-          }
-          
-
+          height: 30px;
+        }
+        button {
+          margin-top: 10px;
+          width: 100%;
+          height: 30px;
+          color: $white;
+          background-color: $grey;
+          font-size: $normal;
+          padding: auto;
+        }
       }
-
+    }
   }
 
   .container {
@@ -96,7 +89,7 @@
     height: 100%;
     max-width: 1200px;
     @media (max-width: $md) {
-        max-width: 98%;
-      }
+      max-width: 98%;
+    }
   }
 }

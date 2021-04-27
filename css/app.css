@@ -133,6 +133,12 @@ h6 {
 .wrapper section {
   width: 100%;
   height: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.wrapper section .section__cont {
+  width: 100%;
 }
 
 .wrapper footer {
@@ -175,16 +181,6 @@ h6 {
   background-color: #414040;
   font-size: 25px;
   padding: auto;
-}
-
-.wrapper footer .footer__cont form button:hover {
-  background-color: #858282;
-}
-
-@media (max-width: 720px) {
-  .wrapper footer .footer__cont form button:hover {
-    pointer-events: none;
-  }
 }
 
 .wrapper .container {
