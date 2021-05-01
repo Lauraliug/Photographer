@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Photographer" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Photographer</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main id="home">
+        <div class="box">
+          <h1>Jane Doe</h1>
+          <h2>PHOTOGRAPHER</h2>
+        </div>
+            <div class="nav">
+              <a href="#home" class="home" onclick="chColor" >Home</a>
+              <a href="#portfolio" class="portfolio" onclick="chColor">Portfolio</a>
+              <a href="#contact" class="contact" onclick="chColor" >Contact</a>
+            </div>
+      </main>
+      <section>
+        <div class="container">
+          <div class="block__1" id="portfolio"></div>
+          <div class="block__2"></div>
+          <div class="block__3"></div>
+          <div class="block__4"></div>
+          <div class="block__5"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="footer__cont" id="contact">
+            <form action="" method="GET" enctype="multipart/form-data">
+              <h3>Contact</h3>
+              <p>
+                Lorem ipsum dolor sit Lorem ipsum doloUllam ea, ut consectetur
+                exercitationem ente Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Unde, odio. non voluptatum. rendis aliquid
+                tempora vero illo quaerat quo itaque distinctio magnam ad
+                consequatur!
+              </p>
+              <p>Name</p>
+              <input type="text" name="name" />
+              <p>Email</p>
+              <input type="text" name="email" />
+              <p>Message</p>
+              <input type="text" name="message" />
+              <div></div>
+              <button onclick="changeColor()" type="submit">Send</button>
+              <p>Powered by</p>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
