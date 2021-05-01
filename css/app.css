@@ -102,32 +102,28 @@ h6 {
   background-size: cover;
 }
 
-.wrapper main .main__cont {
-  width: 100%;
+.wrapper main .box {
+  width: 290px;
+  height: 120px;
+  border: 1px solid white;
+}
+
+.wrapper main .box h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "UnifrakturCook", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
-.wrapper main .main__cont .box {
-  width: 300px;
-  height: 200px;
-  border: 3px solid white;
-}
-
-.wrapper main .main__cont .box h1 {
-  font-size: 70px;
-  font-family: "UnifrakturCook", cursive;
+.wrapper main .box h2 {
   color: white;
-  text-align: center;
-  padding-top: 25px;
-}
-
-.wrapper main .main__cont .box p {
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  padding-top: 25px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .wrapper section {
@@ -195,7 +191,13 @@ h6 {
   margin-left: 30px;
 }
 
-.wrapper footer .footer__cont form h2 {
+@media (max-width: 720px) {
+  .wrapper footer .footer__cont form {
+    max-width: 90%;
+  }
+}
+
+.wrapper footer .footer__cont form h3 {
   font-size: 35px;
   text-align: center;
   padding-top: 40px;
@@ -216,13 +218,14 @@ h6 {
   width: 100%;
   height: 30px;
   color: white;
-  background-color: #414040;
+  background-color: #242323;
   font-size: 18px;
   padding: auto;
 }
 
 .wrapper .container {
   width: 100%;
+  height: 100%;
   max-width: 1000px;
 }
 
@@ -230,4 +233,30 @@ h6 {
   .wrapper .container {
     max-width: 98%;
   }
+}
+
+.nav {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 100px;
+  background-color: #cfcbcb;
+  border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+  }
+}
+
+.nav a {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  padding: 6px 3px 3px 3px;
 }

@@ -12,30 +12,26 @@
     background-position: center center;
     background-size: cover;
 
-    .main__cont {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .box {
+      width: 290px;
+      height: 120px;
+      border: 1px solid $white;
 
-      .box {
-        width: 300px;
-        height: 200px;
-        border: 3px solid $white;
-
-        h1 {
-          font-size: $xlarge;
-          font-family: $font;
-          color: $white;
-          text-align: center;
-          padding-top: 25px;
-        }
-        p {
-          font-size: $medium;
-          color: $white;
-          text-align: center;
-          padding-top: 25px;
-        }
+      h1 {
+        color: $white;
+        font-size: $xlarge;
+        font-family: $font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+      }
+      h2 {
+        color: $white;
+        font-size: $normal;
+        justify-content: center;
+        align-items: center;
+        display: flex;
       }
     }
   }
@@ -45,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     .block__1,
     .block__2,
@@ -96,7 +93,11 @@
         width: 95%;
         margin-left: 30px;
 
-        h2 {
+        @media (max-width: $md) {
+          max-width: 90%;
+        }
+
+        h3 {
           font-size: $medium;
           text-align: center;
           padding-top: 40px;
@@ -124,9 +125,36 @@
 
   .container {
     width: 100%;
+    height: 100%;
     max-width: 1000px;
     @media (max-width: $md) {
       max-width: 98%;
     }
   }
+}
+
+.nav {
+ width: 300px;
+ height: 40px;
+ display: flex;
+ justify-content: space-between;
+ position: absolute;
+ bottom: 100px;
+ background-color: $lightgrey;
+ border-radius: 5px;
+
+ @media (max-width :$md) {
+   position: absolute;
+   display: block;
+   bottom: 0px;
+ }
+    a {
+ 
+      color: black;
+      font-size: $normal;
+      text-align: center;
+      padding: 6px 3px 3px 3px;
+      
+    }
+  
 }

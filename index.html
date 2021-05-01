@@ -15,22 +15,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <main>
-        <div class="container">
-          <div class="main__cont">
-            <div class="box">
-              <h1>Jane Doe</h1>
-              <p>PHOTOGRAPHER</p>
+      <main id="home">
+        <div class="box">
+          <h1>Jane Doe</h1>
+          <h2>PHOTOGRAPHER</h2>
+        </div>
+            <div class="nav">
+              <a href="#home" class="home" onclick="chColor" >Home</a>
+              <a href="#portfolio" class="portfolio" onclick="chColor">Portfolio</a>
+              <a href="#contact" class="contact" onclick="chColor" >Contact</a>
             </div>
-          </div>
-        </div>
-        <div class="nav">
-            
-        </div>
       </main>
       <section>
         <div class="container">
-          <div class="block__1"></div>
+          <div class="block__1" id="portfolio"></div>
           <div class="block__2"></div>
           <div class="block__3"></div>
           <div class="block__4"></div>
@@ -39,9 +37,9 @@
       </section>
       <footer>
         <div class="container">
-          <div class="footer__cont">
+          <div class="footer__cont" id="contact">
             <form action="" method="GET" enctype="multipart/form-data">
-              <h2>Contact</h2>
+              <h3>Contact</h3>
               <p>
                 Lorem ipsum dolor sit Lorem ipsum doloUllam ea, ut consectetur
                 exercitationem ente Lorem ipsum dolor sit amet consectetur
